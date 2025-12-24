@@ -36,12 +36,14 @@
             z-index: 10;
         }
         
+        /* Animation for the text */
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
             40% {transform: translateY(-30px);}
             60% {transform: translateY(-15px);}
         }
 
+        /* Confetti Code */
         .confetti {
             position: absolute;
             width: 10px;
@@ -59,9 +61,11 @@
     <div class="card">
         <h1>🎉 Happy Birthday! 🎂</h1>
         <p>Wishing you a fantastic day filled with joy!</p>
+        <p style="font-size: 1rem; margin-top: 20px;">(Made with Python)</p>
     </div>
 
     <script>
+        // Simple JavaScript to create falling confetti
         function createConfetti() {
             const confetti = document.createElement('div');
             confetti.classList.add('confetti');
